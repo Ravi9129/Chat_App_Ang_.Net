@@ -1,0 +1,21 @@
+<div class="text-center">
+    <h1>Let's get you connected and <span class="text-danger"> Chat </span> with others
+    <span clas="text-primary">People</span> </h1>
+</div>
+
+<div class="d-flex justify-content-center">
+    <div class="col-12 col-lg-5">
+        <main class="form-signin">
+            <form [formGroup]="userForm" (ngSubmit)="submitForm()" autocomplete="off" class="p-3 border">
+                <h2>Choose Your Name</h2>
+                <div class="form floating mb-3">
+                    <input formControlName="name" type="text" class="form-control" placeholder="Name">
+                    <label for="name"> </label>
+                </div>
+                <div class="d-grid mt-4 px-4">
+                    <button class="btn btn-warning" type="submit"> Submit</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</div>
